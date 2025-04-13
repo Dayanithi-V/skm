@@ -13,7 +13,8 @@ export function AppLayout() {
   const [activeView, setActiveView] = useState("habits")
   const [viewMode, setViewMode] = useState<"weekly" | "calendar">("weekly")
   const [habits, setHabits] = useState<Habit[]>([])
-  const { username } = useAuth() // Get current user's username
+  const { user } = useAuth() // Get current user
+  const username = user?.email || 'anonymous' // Use email as username or fallback to 'anonymous'
 
   const handleAddHabit = (habit: Habit) => {
     setHabits((prev) => [...prev, habit])
