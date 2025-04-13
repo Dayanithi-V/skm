@@ -9,7 +9,7 @@ import {
   setDoc,
   Timestamp 
 } from 'firebase/firestore'
-import { db } from './firebase'
+import { database as db } from './firebase'
 import type { Habit } from '@/components/habit-tracker'
 
 // Create a new habit
