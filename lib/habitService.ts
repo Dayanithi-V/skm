@@ -9,7 +9,7 @@ import {
   serverTimestamp,
   Timestamp 
 } from "firebase/firestore";
-import { database as db } from "./firebase";
+import { db } from "./firebase";
 import { Habit } from "@/types/habits";
 
 // Add a new habit
