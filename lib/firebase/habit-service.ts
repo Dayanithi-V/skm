@@ -1,4 +1,4 @@
-import { db } from './firebase';
+import { database as db } from '../firebase';
 import { 
   ref,
   set,
